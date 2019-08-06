@@ -1,13 +1,15 @@
-var valor1 = 0;
-var valor2 = 0;
+var valor1;
+var valor2;
 var operador = "";
 
 //ADD NUMERO NO VISOR
 $(document).on('click','.numero',function(){
     //VALOR A SER ADICIONADO
     var valor = this.value;
+
     //VALOR DO VISOR
     var visorValue = $("#visor").val();
+
     //ALTERA VALOR DO VISOR (VALOR DO VISOR + VALOR A SER ADICIONADO)
     $("#visor").val(visorValue + valor);
 });
